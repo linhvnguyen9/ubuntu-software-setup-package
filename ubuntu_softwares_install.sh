@@ -63,3 +63,12 @@ curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sudo ln -s ~/.sdkman/candidates/java/current/bin/javac /usr/bin/javac
 sudo ln -s ~/.sdkman/candidates/java/current/bin/java /usr/bin/java
+
+#Utilities shortcuts
+alias gc="git clone"
+alias gp="git pull"
+alias gs="git status"
+alias gl="git log --oneline"
+alias ga="git add ."
+alias gc="git commit"
+alais gcm="git commit -m $1"
