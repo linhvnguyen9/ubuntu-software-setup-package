@@ -24,6 +24,8 @@ sudo apt install -y npm
 sudo apt install -y unrar
 #Install gparted
 sudo apt install -y gparted
+#Install zsh
+sudo apt install -y zsh
 
 #---------------------------------
 #Snaps
@@ -69,6 +71,6 @@ alias gc="git clone"
 alias gp="git pull"
 alias gs="git status"
 alias gl="git log --oneline"
-alias ga="git add ."
+alias gaa="git add ."
 alias gc="git commit"
 alias gcm="git commit -m $1"
