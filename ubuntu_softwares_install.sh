@@ -3,7 +3,7 @@ cd Downloads/
 
 #Download and install Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y google-chrome-stable_current_amd64.deb
+sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
 #Download and install Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.1.2-amd64.deb
