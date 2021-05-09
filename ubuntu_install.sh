@@ -1,5 +1,11 @@
+#!/bin/bash
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root, use sudo "$0" instead" 1>&2
+   exit 1
+fi
+
 #Open Downloads folder inside Home to download all installers
-cd Downloads/
+cd ~/Downloads/
 
 #Download and install Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
