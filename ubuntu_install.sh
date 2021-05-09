@@ -26,11 +26,25 @@ sudo apt install -y unrar
 sudo apt install -y gparted
 #Install zsh
 sudo apt install -y zsh
+#Downloads custom fonts
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+#Installs custom fonts
+sudo cp -r ./MesloLGS%20NF%20Bold.ttf /usr/share/fonts/truetype/MesloLGS%20NF%20Bold.ttf
+sudo cp -r ./MesloLGS%20NF%20Italic.ttf /usr/share/fonts/truetype/MesloLGS%20NF%20Italic.ttf
+sudo cp -r ./MesloLGS%20NF%20Regular.ttf /usr/share/fonts/truetype/MesloLGS%20NF%20Regular.ttf
+
 #Install Powerlevel10k theme for zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 #Install zsh autosuggestions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#Copy shell config
+cp ./bashrc ~/.bashrc
+cp ./zshrc ~/.zshrc
+cp ./p10k.zsh ~/.p10k.zsh
 
 #---------------------------------
 #Snaps
